@@ -1,22 +1,14 @@
-<footer class="w-full flex flex-col sm:flex-row sm:justify-center text-lg tracking-wide px-4 sm:px-0 py-16">
-  <div class="text-center pr-0 sm:pr-8 py-4">
-    <ul class="list-none">
-      {% for item in site.social %}
-        <li>
-          <a class="text-gray-800 hover:text-purple-600 no-underline" href="{{ item.url }}" target="_blank" rel="_noopener">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="h-px sm:h-auto w-1/2 sm:w-px bg-purple-600 mx-auto sm:mx-0"></div>
-  <div class="text-center px-8 py-4">
-    <ul class="list-none">
-      <li>
-        <a class="text-gray-800 hover:text-purple-600 no-underline" href="{% if isFront %}#about{% else %}{{ site.baseURL }}/#about{% endif %}">About</a>
-      </li>
-      <li>
-        <a class="text-gray-800 hover:text-purple-600 no-underline" href="{% if isFront %}#follow{% else %}{{ site.baseURL }}/#follow{% endif %}">Follow</a>
-      </li>
-    </ul>
-  </div>
+<footer class='footer'>
+    <div class='footer-icons-container'>
+        <a href="https://www.instagram.com/350east_barber/"
+               target="_blank"
+               rel="noopener noreferrer">
+                <img src="/img/instagram.svg" alt="Instagram Logo" class="footer-icon">
+            </a>
+        <a href="mailto: franknardone95@gmail.com"
+           target="_blank"
+           rel="noopener noreferrer">
+            <img src="/img/mail.svg" alt="Mail Logo" class="footer-icon">
+        </a>
+    </div>
 </footer>
